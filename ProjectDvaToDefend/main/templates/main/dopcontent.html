@@ -1,0 +1,172 @@
+{% extends 'main/layout.html' %}
+
+{% block content %}
+
+<br> <br>
+
+<div class="container">
+
+  <div class="page-header">
+    <h1>Новости книжного клуба <small> Книги / Веселье</small></h1>
+  </div>
+
+  <div class="row">
+
+    <div class="col-md-8">
+      <article id="">
+        <header>
+          <div class="meta">
+
+            Written by <span class="author">Asset</span> <span class="date">17/03/2022</span> | <span class="comments"><span class="badge">4</span> Comments</span>
+          </div>
+          <br> <br>
+          <h2>
+            <a style="color: orange;">
+            Новые книги!!!</a></h2>
+        </header>
+        <div class="entry-content">
+          <a href="">
+            <img src="https://c.wallhere.com/photos/46/25/planet_science_fiction_space_art_futuristic_city_digital_art_futuristic-254033.jpg!d" alt="" class="img-fluid" />
+          </a>
+          <p class="lead">Нам завезли новые книги из серии Фантастики, те кто давно хотели почитать что то из серии фантастики желаю вам удачи, ведь завезли очень много интересных книг. P.s: Лично я уже успел забрать три книги, если вы не успели взять книги, то могу дать почитать, то что я взял&hellip;</p>
+
+          <a href="#" class="btn btn-warning">Узнать больше... <span class="glyphicon glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+        </div>
+        <footer>
+        </footer>
+      </article>
+
+      <br> <br> <br>
+
+      <article id="">
+        <header>
+          <div class="meta">
+
+            Written by <span class="author">Administrator</span> <span class="date">02/03/2022</span> | <span class="comments"><span class="badge">4</span> Comments</span
+          </div>
+          <h2>
+            <a style="color: orange;">
+            Мусор</a></h2>
+        </header>
+        <div class="entry-content">
+          <a href="">
+            <img src="https://i.archi.ru/i/183345.jpg" alt="" class="img-fluid" />
+          </a>
+          <p>Пожалуйста, соблюдайте чистоту. На прошлой неделе мы узнали что кто то из членов нашего клуба разбросал мусор на втором этаже библиотеки, прошу впредь убирать за собой мусор иначе мне придется идти и отменять заказ на книги из жанра Фантастики... </p>
+
+          <a href="#" class="btn btn-warning">Узнать больше... <span class="glyphicon glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+        </div>
+        <footer>
+        </footer>
+      </article>
+
+      <br> <br> <br>
+
+      <article id="">
+        <header>
+          <div class="meta">
+
+            Written by <span class="author">Arailym</span> <span class="date">01/01/2022</span> | <span class="comments"><span class="badge">1245</span> Comments</span
+          </div>
+          <h2>
+            <a style="color: orange;">
+            C Новым Годом!!!</a></h2>
+        </header>
+        <div class="entry-content">
+          <a href="">
+            <img src="https://i.pinimg.com/originals/2f/c8/09/2fc809f7b3ea1e7058af3cdb9db56f44.jpg" alt="" class="img-fluid" />
+          </a>
+          <p>Дорогие друзья! С Новым годом! Пусть этот год с легкостью войдет в жизнь каждого из нас, подарит море позитива, жизненной энергии, вдохновения, любви и творчества, стабильности и надежности, благополучия и комфорта! Всем желаю, чтобы мечты сбывались как можно быстрее и вдохновляли на новые цели! Вкусных блюд, приятной семейной атмосферы! С праздником!</p>
+
+          <a href="#" class="btn btn-warning">Узнать больше... <span class="glyphicon glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+        </div>
+        <footer>
+        </footer>
+      </article>
+      
+
+
+
+    </div>
+    <aside class="col-md-4">
+
+      <div class="card mb-3">
+        <h3 class="card-header mb-3">Книжный Клуб</h3>
+        <form method="post" class="form-horizontal">
+          <div class="form-group">
+            <div class="col-sm-12">
+        
+              {% csrf_token %}
+              {{ form.email }}
+            
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-sm-12">
+              <button type="submit"  class="btn btn-warning">Войти</button>
+            </div>
+          </div>
+        </form>
+
+      </div>
+
+      <h3>Недавние новости</h3>
+      <div class="list-group  mb-3">
+        <a href="#" class="list-group-item active">
+          <h4 class="list-group-item-heading">Фантастика</h4>
+          <p class="list-group-item-text">
+            Привезли много книги жанра&hellip;
+          </p>
+        </a>
+        <a href="#" class="list-group-item">
+          <h4 class="list-group-item-heading">Мусор</h4>
+          <p class="list-group-item-text">
+            Пожалуйста!!! Убирайте за собой мусор, иначе&hellip;
+          </p>
+        </a>
+        <a href="#" class="list-group-item">
+          <h4 class="list-group-item-heading">С Новым Годом!!!</h4>
+          <p class="list-group-item-text">
+            Желаю счастья, удачи и чтобы у вас&hellip;
+          </p>
+        </a>
+      </div>
+      <button type="button" class="btn btn-secondary btn-lg btn-block"><a href="{% url 'dopcontent_fill' %}">Добавление записей</a></button>
+    </div>
+  </div>
+      
+
+  <br>
+  <br>
+  <br>
+
+  <div class="footer-dark">
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-3 item">
+                    <h3>Сервисы</h3>
+                    <ul>
+                        <li><a href="#">Связь</a></li>
+                        <li><a href="#">Лицензия</a></li>
+                        <li><a href="#">Права</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-3 item">
+                    <h3>О нас</h3>
+                    <ul>
+                      <li><a href="#">Маликов Асет</a></li>
+                      <li><a href="#">Аманжолова Арайлым</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-6 item text">
+                    <h3>HogLib</h3>
+                    <p>Главный сайт библиотеки Хогвартса.</p>
+                </div>
+        </div>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+{% endblock %}

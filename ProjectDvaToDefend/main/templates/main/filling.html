@@ -1,0 +1,23 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Работа с данными{% endblock %}
+
+{% block content %}
+
+
+<div class="foun">
+    <h3>Добавить данные</h3>
+    <form method="post">
+        
+        {% csrf_token %}
+
+        {{ form.name }}<br>
+        {{ form.biography }}<br>
+        {{ form.author_of_publication }}<br>
+
+        <span>{{ error_message }}</span>
+
+        <button  type="sumbit" class="btn btn-success">Готово</button>
+    </form>
+</div>
+{% endblock %}

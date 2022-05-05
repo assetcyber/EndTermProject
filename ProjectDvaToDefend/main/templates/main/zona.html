@@ -1,0 +1,162 @@
+{% extends 'main/layout.html' %}
+
+{% block content %}
+ 
+ <br>
+ <br>
+ <br>
+
+<div class="container">
+  <h1>
+    Комнаты отдыха
+  </h1>
+  <p>Для резервациий комнаты обращаться к администраций библиотеки. <br>
+  Пожайлуйста перед резервациий комнаты убедитесь что вы взяли комнату на количество человек в вашей группе.</p>
+  
+  <br>
+  <br>
+ 
+  
+  <h2>Карты выбора свободных комнат</h2>
+  <br>
+  
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+  <div class="col mb-4">
+    <div class="card">
+      <img src="https://xn--80aacacvtbthqmh0dxl.xn--p1ai/assets/galleries/1256/img_0089.jpg" style = "width: 100%" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Одиночная комната №1</h5>
+        <p class="card-text">Комната на одного человека позволяющая отдохнуть от всякого шума или поработать в гордом одиночестве.</p>
+        <button type="button" class="btn btn-outline-warning"> <a href="{% url 'dopcontent' %}" style="text-decoration: none; color: rgb(212, 177, 63);"> Информация </a></button>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card">
+      <img src="https://www.massey.ac.nz/massey/fms/Massey%20News/2015/6/images/library-interior.jpg" style = "width: 100%" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Большой кабинет №2</h5>
+        <p class="card-text">Комната на несколько людей позволяющая весело провести время или поработать со всей дружной командой.</p>
+        <button type="button" class="btn btn-outline-warning"> <a href="{% url 'dopcontent' %}" style="text-decoration: none; color: rgb(212, 177, 63);"> Информация </a></button>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card">
+      <img src="https://library.princeton.edu/sites/default/files/news/images/SMS_6108%20LR.jpg" style = "width: 100%" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Удобный зал №3</h5>
+        <p class="card-text">Комната на несколько людей позволяющая полежать, отдохнуть или поработать со всей дружной командой.</p>
+        <button type="button" class="btn btn-outline-warning"> <a href="{% url 'dopcontent' %}" style="text-decoration: none; color: rgb(212, 177, 63);"> Информация </a></button>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card">
+      <img src="https://ivansavchyn.com/wp-content/uploads/2020/09/Tama-Art-University-Library-by-Toyo-Ito-Associates-10.jpg" style = "width: 100%" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Зал с панарамными окнами №4</h5>
+        <p class="card-text">Большой зал с панарамными окнами чтобы можно было насладиться чтеньем вашей книги.</p>
+        <button type="button" class="btn btn-outline-warning"> <a href="{% url 'dopcontent' %}" style="text-decoration: none; color: rgb(212, 177, 63);"> Информация </a></button>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card">
+      <img src="https://www.contemporist.com/wp-content/uploads/2013/12/hu_181213_015f.jpg" style = "width: 100%" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Информационный зал №5</h5>
+        <p class="card-text">Зал оснащенный хорошим интернетом и торговыми автоматами, разрешено сидеть до 12 часов ночи.</p>
+        <button type="button" class="btn btn-outline-warning"> <a href="{% url 'dopcontent' %}" style="text-decoration: none; color: rgb(212, 177, 63);"> Информация </a></button>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card">
+      <img src="https://i.kapital.kz/c/98d3eaec9cd672fb2d68285ec5956a28/n/630/-/5/9/f/f/a/2d44e6b5230b2aa852cec0412df.JPG" style = "width: 100%" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Круговой зал №6</h5>
+        <p class="card-text">Большой круговой зал с хорошим интернетом и удобными диванами, так же разрешено лежать на них.</p>
+        <button type="button" class="btn btn-outline-warning"> <a href="{% url 'dopcontent' %}" style="text-decoration: none; color: rgb(212, 177, 63);"> Информация </a></button>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card">
+      <img src="https://pbs.twimg.com/media/Edh9pyHWkAk5wFY.jpg" style = "width: 100%" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Столики для группы №7</h5>
+        <p class="card-text">Столики на группу людей, доступ разрешен только для групп из 4х людей, так же должна соблюдаться тишина.</p>
+        <button type="button" class="btn btn-outline-warning"> <a href="{% url 'dopcontent' %}" style="text-decoration: none; color: rgb(212, 177, 63);"> Информация </a></button>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card">
+      <img src="https://yurtlar.gau.edu.tr/images/portfolio/e-full1.jpg" style = "width: 100%" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Проектная работа №8</h5>
+        <p class="card-text">Комната где можно задержаться на неделю, только для четвертого курса, в комнату носят еду (за отдельную плату).</p>
+        <button type="button" class="btn btn-outline-warning"> <a href="{% url 'dopcontent' %}" style="text-decoration: none; color: rgb(212, 177, 63);"> Информация </a></button>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card">
+      <img src="https://visit.alvaraalto.fi/app/uploads/2018/06/alvar-aalto-location-university-of-jyvaskyla-lecture-hall-photo-tero-takalo-eskola.jpg" style = "width: 100%" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Лекционный зал №9</h5>
+        <p class="card-text">Большой зал для проведения лекция, разрешн для учетелей лекции и практики или руководителй студенческих групп</p>
+        <button type="button" class="btn btn-outline-warning"> <a href="{% url 'dopcontent' %}" style="text-decoration: none; color: rgb(212, 177, 63);"> Информация </a></button>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card">
+      <img src="http://www.pcadesign.com/wp-content/uploads/2013/02/019-1000x695.jpg" style = "width: 100%" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Главный зал №10</h5>
+        <p class="card-text">Доступен всем, но если вы хотите забронировать определенный столик, то можете связаться с главой библиотеки.</p>
+        <button type="button" class="btn btn-outline-warning"> <a href="{% url 'dopcontent' %}" style="text-decoration: none; color: rgb(212, 177, 63);"> Информация </a></button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  
+</div>
+
+<br>
+<br>
+<br>
+
+
+<div class="footer-dark">
+  <footer>
+      <div class="container">
+          <div class="row">
+              <div class="col-sm-6 col-md-3 item">
+                  <h3>Сервисы</h3>
+                  <ul>
+                      <li><a href="#">Связь</a></li>
+                      <li><a href="#">Лицензия</a></li>
+                      <li><a href="#">Права</a></li>
+                  </ul>
+              </div>
+              <div class="col-sm-6 col-md-3 item">
+                  <h3>О нас</h3>
+                  <ul>
+                      <li><a href="#">Маликов Асет</a></li>
+                      <li><a href="#">Аманжолова Арайлым</a></li>
+                  </ul>
+              </div>
+              <div class="col-md-6 item text">
+                  <h3>HogLib</h3>
+                  <p>Главный сайт библиотеки Хогвартса.</p>
+              </div>
+      </div>
+  </footer>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+{% endblock %}

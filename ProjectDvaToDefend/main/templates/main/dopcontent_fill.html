@@ -1,0 +1,20 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Данные контента{% endblock %}
+
+{% block content %}
+
+
+<div class="foun">
+    <h3>Добавить данные Дополнительному контенту</h3>
+    <form method="post">
+        
+        {% csrf_token %}
+
+        {{ dopcont_form.title }}<br>
+        {{ dopcont_form.content }}<br>
+        
+        <button  type="sumbit" class="btn btn-success">Готово</button>
+    </form>
+</div>
+{% endblock %}

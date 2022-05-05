@@ -1,0 +1,13 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}{{famous_persons.name}} {% endblock %}
+
+{% block content %}
+
+    <h2>{{ famous_persons.name }}</h2>
+    <p>{{ famous_persons.biography }}</p>
+    <p><strong>{{ famous_persons.author_of_publication }}</strong></p>
+    <a href="{% url 'filling_update' famous_persons.id %}">Редактировать</a>
+    <a href="{% url 'filling_delete' famous_persons.id %}">Удалить</a>
+
+{% endblock %}
